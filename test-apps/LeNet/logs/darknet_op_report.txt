@@ -1,0 +1,182 @@
+Fault list generation approach: For each register(153) injections are perfomed in 18 threads(out of the 512 used by kernels) testing a pseudo-random single bit stuck at 1 and stuck at 0.
+
+Fault attributes legend: faults are classified as 
+- SDC-safe if the injected fault still make the Neural Network produce the correct guess with a different percentage(in each of the guessing classes) with respect to fault-free result;
+- SDC-critical if the final guess is wrong;
+- Masked if the fault doesn't affect the guess and the associated percentage neither;
+- DUE if a segmentation fault occurs and the result is not obtained at all
+
+----------------------------------------------------------------------------------
+Application name: darknet LeNet
+Number of kernels: 59
+Max number of threads: 512
+Number of registers: 153 (32 bits wide)
+Total number of possible stuck-at faults in Register File: 5013504
+
+Number of injected Faults: 5508
+Simulation time (hours:minutes): 13:08
+
+Faults classification:
+Masked  DUE   SDC (safe + critical)
+3623    1191  694 (530 + 164)
+
+Global Fault coverage (SDCs/Injected Faults): 12.60%
+
+Number of possible stuck-at faults for each register: 32768
+Number of injected faults in each register: 36
+----------------------------------------------------------------------------------
+Detailed results for each register
+Register  Detected Faults(SDCs)  Fault Coverage (SDCs/Injected Faults)
+  0             0                0.00%
+  1             4                11.11%
+  2             5                13.89%
+  3             0                0.00%
+  4             5                13.89%
+  5             0                0.00%
+  6             0                0.00%
+  7             0                0.00%
+  8             7                19.44%
+  9             0                0.00%
+  10            0                0.00%
+  11            0                0.00%
+  12            15               41.67%
+  13            8                22.22%
+  14            0                0.00%
+  15            18               50.00%
+  16            11               30.56%
+  17            22               61.11%
+  18            2                5.56%
+  19            0                0.00%
+  20            4                11.11%
+  21            30               83.33%
+  22            2                5.56%
+  23            0                0.00%
+  24            20               55.56%
+  25            28               77.78%
+  26            15               41.67%
+  27            0                0.00%
+  28            25               69.44%
+  29            10               27.78%
+  30            9                25.00%
+  31            5                13.89%
+  32            10               27.78%
+  33            3                8.33%
+  34            9                25.00%
+  35            5                13.89%
+  36            7                19.44%
+  37            7                19.44%
+  38            5                13.89%
+  39            10               27.78%
+  40            5                13.89%
+  41            7                19.44%
+  42            7                19.44%
+  43            6                16.67%
+  44            9                25.00%
+  45            4                11.11%
+  46            10               27.78%
+  47            4                11.11%
+  48            6                16.67%
+  49            6                16.67%
+  50            5                13.89%
+  51            9                25.00%
+  52            5                13.89%
+  53            6                16.67%
+  54            3                8.33%
+  55            6                16.67%
+  56            9                25.00%
+  57            5                13.89%
+  58            10               27.78%
+  59            5                13.89%
+  60            6                16.67%
+  61            6                16.67%
+  62            5                13.89%
+  63            10               27.78%
+  64            3                8.33%
+  65            0                0.00%
+  66            4                11.11%
+  67            1                2.78%
+  68            2                5.56%
+  69            5                13.89%
+  70            5                13.89%
+  71            2                5.56%
+  72            1                2.78%
+  73            0                0.00%
+  74            5                13.89%
+  75            10               27.78%
+  76            4                11.11%
+  77            0                0.00%
+  78            8                22.22%
+  79            9                25.00%
+  80            4                11.11%
+  81            3                8.33%
+  82            6                16.67%
+  83            4                11.11%
+  84            8                22.22%
+  85            0                0.00%
+  86            2                5.56%
+  87            4                11.11%
+  88            4                11.11%
+  89            2                5.56%
+  90            5                13.89%
+  91            3                8.33%
+  92            5                13.89%
+  93            4                11.11%
+  94            4                11.11%
+  95            2                5.56%
+  96            4                11.11%
+  97            0                0.00%
+  98            0                0.00%
+  99            0                0.00%
+  100           2                5.56%
+  101           0                0.00%
+  102           5                13.89%
+  103           0                0.00%
+  104           6                16.67%
+  105           3                8.33%
+  106           5                13.89%
+  107           10               27.78%
+  108           0                0.00%
+  109           5                13.89%
+  110           9                25.00%
+  111           10               27.78%
+  112           4                11.11%
+  113           0                0.00%
+  114           4                11.11%
+  115           0                0.00%
+  116           5                13.89%
+  117           1                2.78%
+  118           2                5.56%
+  119           0                0.00%
+  120           0                0.00%
+  121           2                5.56%
+  122           0                0.00%
+  123           5                13.89%
+  124           1                2.78%
+  125           0                0.00%
+  126           5                13.89%
+  127           5                13.89%
+  128           0                0.00%
+  129           0                0.00%
+  130           0                0.00%
+  131           2                5.56%
+  132           0                0.00%
+  133           3                8.33%
+  134           0                0.00%
+  135           3                8.33%
+  136           2                5.56%
+  137           5                13.89%
+  138           0                0.00%
+  139           0                0.00%
+  140           0                0.00%
+  141           3                8.33%
+  142           0                0.00%
+  143           0                0.00%
+  144           0                0.00%
+  145           1                2.78%
+  146           0                0.00%
+  147           0                0.00%
+  148           3                8.33%
+  149           0                0.00%
+  150           0                0.00%
+  151           0                0.00%
+  152           5                13.89%
