@@ -1,10 +1,5 @@
-77.40%: Five
-19.95%: Three
- 2.45%: Two
- 0.15%: Seven
- 0.05%: Zero
- 0.00%: Eight
- 0.00%: One
- 0.00%: Six
- 0.00%: Nine
- 0.00%: Four
+------------- NVBit (NVidia Binary Instrumentation Tool v1.5.4) Loaded --------------
+NVBit core environment variables (mostly for nvbit-devs):
+            NVDISASM = nvdisasm - override default nvdisasm found in PATH
+            NOBANNER = 0 - if set, does not print this banner
+---------------------------------------------------------------------------------

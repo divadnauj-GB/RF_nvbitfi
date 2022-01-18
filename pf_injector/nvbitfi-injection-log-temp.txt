@@ -1,19 +1,2 @@
 Kernel name: fill_kernel(int,float,float*,int); kernel Index: 0; Num_Injections: 1
-Kernel name: fill_kernel(int,float,float*,int); kernel Index: 0; Num_Injections: 2
-Kernel name: fill_kernel(int,float,float*,int); kernel Index: 0; Num_Injections: 3
-Kernel name: fill_kernel(int,float,float*,int); kernel Index: 0; Num_Injections: 4
-Kernel name: fill_kernel(int,float,float*,int); kernel Index: 0; Num_Injections: 5
-Kernel name: fill_kernel(int,float,float*,int); kernel Index: 0; Num_Injections: 6
-inspecting: fill_kernel(int,float,float*,int); thread : 210; Register : 0;  Mask : 128; SMID : 0; Stuck at : 0; index: 0;
-inspecting: fill_kernel(int,float,float*,int); thread : 210; Register : 0;  Mask : 128; SMID : 0; Stuck at : 0; index: 1;
-inspecting: fill_kernel(int,float,float*,int); thread : 210; Register : 0;  Mask : 128; SMID : 0; Stuck at : 0; index: 2;
-Kernel name: im2col_gpu_kernel(int,floatconst*,int,int,int,int,int,int,int,float*); kernel Index: 3; Num_Injections: 1
-Kernel name: im2col_gpu_kernel(int,floatconst*,int,int,int,int,int,int,int,float*); kernel Index: 3; Num_Injections: 2
-Kernel name: im2col_gpu_kernel(int,floatconst*,int,int,int,int,int,int,int,float*); kernel Index: 3; Num_Injections: 3
-Kernel name: im2col_gpu_kernel(int,floatconst*,int,int,int,int,int,int,int,float*); kernel Index: 3; Num_Injections: 4
-Kernel name: im2col_gpu_kernel(int,floatconst*,int,int,int,int,int,int,int,float*); kernel Index: 3; Num_Injections: 5
-Kernel name: im2col_gpu_kernel(int,floatconst*,int,int,int,int,int,int,int,float*); kernel Index: 3; Num_Injections: 6
-Kernel name: im2col_gpu_kernel(int,floatconst*,int,int,int,int,int,int,int,float*); kernel Index: 3; Num_Injections: 7
-Kernel name: im2col_gpu_kernel(int,floatconst*,int,int,int,int,int,int,int,float*); kernel Index: 3; Num_Injections: 8
-Kernel name: im2col_gpu_kernel(int,floatconst*,int,int,int,int,int,int,int,float*); kernel Index: 3; Num_Injections: 9
-Kernel name: im2col_gpu_kernel(int,floatconst*,int,int,int,int,int,int,int,float*); kernel Index: 3; Num_Injections: 10
+inspecting: fill_kernel(int,float,float*,int); thread : 472; Register : 1;  Mask : 16384; SMID : 0; Stuck at : 0; index: 0;

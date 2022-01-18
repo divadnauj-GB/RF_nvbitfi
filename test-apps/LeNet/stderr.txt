@@ -7,5 +7,3 @@ layer     filters    size              input                output
     5 dropout       p = 0.50               1024  ->  1024
     6 connected                            1024  ->    10
     7 softmax                                          10
-Loading weights from /home/jetson/darknet/LeNet/mnist_lenet.weights...Done!
-/home/jetson/darknet/LeNet/mnist_images/test/0_Five.png: Predicted in 4.098364 seconds.

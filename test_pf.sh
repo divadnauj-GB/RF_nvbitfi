@@ -116,16 +116,16 @@ printf "\nStep 0 (4): Run and collect output without instrumentation\n"
 #cd $CWD
 
 cd test-apps/LeNet/
-/home/jetson/darknet/darknet classifier predict /home/jetson/darknet/LeNet/cfg/mnist.data /home/jetson/darknet/LeNet/cfg/mnist_lenet.cfg /home/jetson/darknet/LeNet/mnist_lenet.weights  /home/jetson/darknet/LeNet/mnist_images/test/0_Five.png -t 10 >golden_stdout.txt 2>golden_stderr.txt
+/home/juancho/Documents/GitHub/darknet_jd_v1/darknet classifier predict /home/juancho/Documents/GitHub/darknet_jd_v1/LeNet/cfg/mnist.data /home/juancho/Documents/GitHub/darknet_jd_v1/LeNet/cfg/mnist_lenet.cfg /home/juancho/Documents/GitHub/darknet_jd_v1/LeNet/mnist_lenet.weights  /home/juancho/Documents/GitHub/darknet_jd_v1/LeNet/mnist_images/test/0_Five.png -t 10 >golden_stdout.txt 2>golden_stderr.txt
 
-cuobjdump -sass /home/jetson/darknet/darknet > LeNet.sass
+cuobjdump -sass /home/juancho/Documents/GitHub/darknet_jd_v1/darknet > LeNet.sass
 cd $CWD
 
 
 
-cd /home/jetson/nvbit_release/tools/nvbitfi/scripts
+cd /home/juancho/Documents/GitHub/Ampere_NVBit/nvbit_release/tools/RF_nvbitfi/scripts
 
-rm -f /home/jetson/nvbit_release/tools/nvbitfi/test-apps/LeNet/logs/report.txt
+rm -f /home/juancho/Documents/GitHub/Ampere_NVBit/nvbit_release/tools/RF_nvbitfi/test-apps/LeNet/logs/report.txt
 
 #Check the applications' characteristics
 python run_profiler.py

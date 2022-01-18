@@ -19,7 +19,7 @@ def is_timeout(app, pr): # check if the process is active every 'factor' sec for
 			break
 		to_th -= 1
 		time.sleep(factor)
-
+	print(to_th,retcode)
 	if to_th == 0:
 		os.killpg(pr.pid, signal.SIGINT) # pr.kill()
 		print ("timeout")
