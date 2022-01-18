@@ -1,11 +1,11 @@
-/home/juancho/Documents/GitHub/darknet_jd_v1/data/mnist/mnist.names.list at line 572 in ./examples/classifier.cpp file
-77.40%: 5
-19.95%: 3
- 2.45%: 2
- 0.15%: 7
- 0.05%: 0
- 0.00%: 8
- 0.00%: 1
- 0.00%: 6
- 0.00%: 9
- 0.00%: 4
+/home/juancho/Documents/GitHub/darknet_jd_v1/LeNet/mnist_images/labels.txt at line 572 in ./examples/classifier.cpp file
+77.40%: Five
+19.95%: Three
+ 2.45%: Two
+ 0.15%: Seven
+ 0.05%: Zero
+ 0.00%: Eight
+ 0.00%: One
+ 0.00%: Six
+ 0.00%: Nine
+ 0.00%: Four

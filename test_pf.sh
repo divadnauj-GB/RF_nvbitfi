@@ -134,13 +134,13 @@ python run_profiler.py
 python Neural_list.py
 
 #Inject and classify the faults
-python Neural_classifier.py
+#python Neural_classifier.py
 
 
-rm -f stdout_diff.log
-rm -f stderr_diff.log
+#rm -f stdout_diff.log
+#rm -f stderr_diff.log
 #Parse the results
-python Neural_parser.py
+#python Neural_parser.py
 
 
 

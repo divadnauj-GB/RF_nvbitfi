@@ -8,4 +8,4 @@ layer     filters    size              input                output
     6 connected                            1024  ->    10
     7 softmax                                          10
 Loading weights from /home/juancho/Documents/GitHub/darknet_jd_v1/LeNet/mnist_lenet.weights...Done!
-/home/juancho/Documents/GitHub/darknet_jd_v1/LeNet/mnist_images/test/0_Five.png: Predicted in 0.000378 seconds.
+/home/juancho/Documents/GitHub/darknet_jd_v1/LeNet/mnist_images/test/0_Five.png: Predicted in 0.000377 seconds.
