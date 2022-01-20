@@ -81,15 +81,15 @@ extern "C" __device__ __noinline__ void inject_error(uint64_t piinfo, uint64_t p
 								nvbit_write_reg(destGPRNum, injAfterVal);
 					}
 					else {	
-					//injAfterVal = injBeforeVal & (~inj_info->injMask);//Bug coredumped					
-								injAfterVal = ~injBeforeVal ^ (inj_info->injMask); //NOR				
+								injAfterVal = injBeforeVal & (~inj_info->injMask);//Bug coredumped					
+								//injAfterVal = ~injBeforeVal ^ (inj_info->injMask); //NOR				
 								nvbit_write_reg(destGPRNum, injAfterVal);
 											
 					}
 
 				}
 				// updating counter/flag to check whether the error was injected
-				if (verbose_device) printf("register=%d, before=0x%x, after=0x%x, expected_after=0x%x\n", destGPRNum, injBeforeVal, nvbit_read_reg(destGPRNum), injAfterVal);
+				if (verbose_device) printf("register=%d, before=0x%x, after=0x%x, expected_after=0x%x, mask=0x%x\n", destGPRNum, injBeforeVal, nvbit_read_reg(destGPRNum), injAfterVal, inj_info->injMask);
 				inj_info->errorInjected = true; 
 				atomicAdd((unsigned long long*) &inj_info->injNumActivations, 1LL);  
 }
